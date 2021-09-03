@@ -1,0 +1,34 @@
+@import '../mediaQueries.scss';
+.card {
+  height: 5rem;
+  background: #8254f5;
+  border-radius: 20px;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  grid-column: 1/-1;
+  margin-bottom: 2rem;
+
+  @include media('<=phone') {
+    width: 20%;
+  }
+
+  .htwo {
+    color: white;
+  }
+
+  .left-vals {
+    display: flex;
+    align-items: center;
+
+    .para {
+      color: #79cd43;
+      font-size: 0.95rem;
+      margin: 0;
+    }
+
+    .amount {
+      margin-left: 3rem;
+    }
+  }
+}

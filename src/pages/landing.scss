@@ -1,0 +1,318 @@
+@import '../mediaQueries.scss';
+.main {
+  margin-bottom: 15rem;
+  .searchField {
+    border: 0.1px solid #f0f1f2;
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+    .search {
+      margin: 0 1rem;
+    }
+
+    .input {
+      width: 100%;
+      background: transparent;
+      border: none;
+      padding: 1rem 0.5rem;
+      color: white;
+    }
+  }
+
+  .main-area {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    margin-top: 2rem;
+
+    .market {
+      .market-area {
+        background: #270341;
+        padding: 1rem;
+        border-radius: 20px;
+
+        .heading2 {
+          color: white;
+          margin-top: 0;
+        }
+
+        .cards {
+          height: 20rem;
+          overflow-y: auto;
+        }
+      }
+    }
+    .event-area {
+      display: grid;
+      grid-row: span 3;
+      background-color: #270341;
+      width: 30rem;
+      color: white;
+      padding: 1rem;
+      border-radius: 20px;
+      margin: 0;
+
+      .card-new {
+        display: flex;
+        flex-direction: column;
+
+        .card {
+          display: flex;
+          flex-direction: column;
+          background-color: #8254f5;
+          padding: 2rem;
+          border-radius: 20px;
+          height: 10rem;
+        }
+
+        .card-heading {
+          font-size: 1rem;
+        }
+
+        .body-container {
+          display: flex;
+          align-items: baseline;
+          justify-content: baseline;
+
+          .card-body {
+            font-size: 1rem;
+          }
+          .link-svg {
+            height: 2rem;
+            width: 2rem;
+            background-color: #17151d;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+    .coins-area {
+      background: #270341;
+      padding: 1rem;
+      border-radius: 20px;
+
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        .card {
+          flex: 2 0 21%;
+          align-items: center;
+          margin: 5px;
+          height: 100px;
+          margin-right: 1rem;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .fig2 {
+    margin-top: 5rem;
+    .topfield {
+      display: flex;
+
+      .searchField {
+        border: 0.1px solid #f0f1f2;
+        width: 30%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        margin-right: 12rem;
+
+        .search {
+          margin: 0 1rem;
+        }
+      }
+
+      .searchFieldNew {
+        border: 0.1px solid #f0f1f2;
+        width: 20%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+
+        .search {
+          margin: 0 1rem;
+        }
+      }
+    }
+    .fig2area {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      column-gap: 1.5rem;
+      row-gap: 1rem;
+      margin-top: 2rem;
+
+      .left {
+        width: 55rem;
+        background: #270341;
+        padding: 1rem;
+        border-radius: 20px;
+        margin-bottom: 1rem;
+      }
+
+      .right {
+        background-color: green;
+        display: grid;
+        grid-row: span 3;
+        background-color: #270341;
+        width: 30rem;
+        color: white;
+        padding: 1rem;
+        border-radius: 20px;
+        margin: 0;
+
+        .desc-card {
+          background-color: #8254f5;
+          padding: 2rem;
+          border-radius: 20px;
+          margin-bottom: 2rem;
+        }
+
+        .icon-card {
+          display: flex;
+
+          .web-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            // padding: rem;
+            margin: 1rem;
+            width: 10rem;
+            height: 3rem;
+            border-radius: 10px;
+          }
+
+          .reddit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            margin: 1rem;
+            width: 4rem;
+            height: 3rem;
+            border-radius: 10px;
+          }
+
+          .git {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(70, 114, 249);
+            margin: 1rem;
+            width: 4rem;
+            height: 3rem;
+            border-radius: 10px;
+          }
+        }
+
+        .facts {
+          .border {
+            color: #8254f5;
+            width: 70%;
+          }
+          .fact-content {
+            display: inline;
+
+            .cont-one {
+              display: flex;
+              justify-content: space-around;
+            }
+            .cont-two {
+              display: flex;
+              justify-content: space-around;
+            }
+            .cont-three {
+              display: flex;
+              justify-content: space-around;
+            }
+          }
+        }
+
+        .total-card {
+          background-color: #8254f5;
+          padding: 2rem;
+          border-radius: 20px;
+          margin-top: 2rem;
+
+          .total-one {
+            display: flex;
+            justify-content: space-around;
+          }
+
+          .total-two {
+            display: flex;
+            justify-content: space-around;
+          }
+
+          .total-three {
+            display: flex;
+            justify-content: space-around;
+          }
+        }
+      }
+      .bottom-card {
+        display: flex;
+
+        .exchange-card {
+          width: 32rem;
+          background: #270341;
+          padding: 1rem;
+          border-radius: 20px;
+          margin-bottom: 1rem;
+          color: white;
+
+          .sell {
+            display: flex;
+
+            .left {
+              display: flex;
+              align-items: center;
+
+              p {
+                padding-right: 1rem;
+              }
+            }
+
+            .right {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: black;
+
+              margin: 1rem;
+              width: 15rem;
+              height: 3rem;
+              border-radius: 10px;
+              .arrow-icon {
+                display: flex;
+              }
+            }
+          }
+        }
+
+        .alexa-card {
+          width: 20rem;
+          height: 10rem;
+          background: #270341;
+          padding: 1rem;
+          border-radius: 20px;
+          margin-bottom: 1rem;
+          margin-left: 3rem;
+          margin-top: 19rem;
+          color: white;
+
+          .alexa-head {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
